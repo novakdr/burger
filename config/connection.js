@@ -1,10 +1,12 @@
+// DEPENDENCIES
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    port: '8889'
+    port: '8889',
+    database: 'burgers_db'
 });
 
 connection.connect((err) => {
@@ -12,7 +14,6 @@ connection.connect((err) => {
         console.log('error connecting: ' + err.stack);
         return;
     }
-
     console.log('connected as id ' + connection.threadId);
 });
 

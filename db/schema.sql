@@ -1,3 +1,4 @@
+/* MYSQL DATABASE & TABLE SCHEMA */
 CREATE DATABASE burgers_db
 USE burgers_db
 

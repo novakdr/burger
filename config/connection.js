@@ -2,9 +2,8 @@
 const mysql = require('mysql');
 var connection;
 
-if (process.env.y2w3wxldca8enczv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com) {
-    connection = mysql.createConnection(process.env.y2w3wxldca8enczv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com
-    );
+if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
     connection = mysql.createConnection({
         host: 'localhost',

@@ -1,18 +1,13 @@
 // DEPENDENCIES
 const mysql = require('mysql');
-let connection;
-
-if (process.env.JAWSDB_URL) {
-    connection = mysql.createConnection(process.env.JAWSDB_URL)
-} else {
-    connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'root',
-        database: 'burgers_db',
-        port: '8889'
-    });
-}
+    
+const connection = mysql.createConnection({
+        host: 'y2w3wxldca8enczv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        user: 'bmkcmlmmo6ke3pvo',
+        password: 'hdwzcx83mv3lbnko',
+        database: 'iy3ar6sjyfw2iphb',
+        port: '3306'
+});
 
 connection.connect(function(err) {
     if (err) {
